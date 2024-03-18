@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: sellerx-test
+    database: sellerx-test
+    schema: test
+    tables:
+      - name: transaction
+      - name: store
+      - name: device
