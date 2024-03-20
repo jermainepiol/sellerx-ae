@@ -7,7 +7,70 @@ sources:
     tables:
       - name: transaction
         description: staging table for transaction data (transaction.xlsx in provided raw dataset)
+        columns: 
+          - name: id
+            description: transaction ID, primary key
+            tests:
+            - unique
+            - not_null
+          - name: device_id
+            description: id for device, foreign key (device.id), transaction cannot go through without a device
+            tests:
+            - not_null
+          - name: product_name
+            description: appended from product_name and product_name_4 to reduce confusion of product name
+          - name: product_sku
+          - name: amount
+            description: value of transaction, in EUR. Should only accept positive values
+            tests:
+            - not_null
+          - name: status
+            description: status of transaction
+            tests:
+              - accepted_values:
+                  values: ['accepted' , 'cancelled', 'refused']
+          - name: created_at
+            description: timestamp when transaction was created
+            tests:
+              - not_null
+          - name: happened_at
+            description: timestamp when transaction last changed status
       - name: store
         description: staging table for store data (store.xlsx in provided raw dataset)
+        columns:
+          - name: id
+            description: store id, primary key
+            tests:
+              - unique
+              - not_null
+          - name: name
+            description: store name, name cannot be null
+            tests:
+              - not_null
+          - name: country
+            description: country name
+          - name: created_at
+            description: timestamp when store was created
+          - name: typology
+            description: typology of the store, limited values
+            tests:
+              - accepted_values:
+                  values: ['Beauty' , 'Florist', 'FoodTruck', 'Hotel', 'Other', 'Press', 'Restaurant', 'Service']
       - name: device
         description: staging table for device data (device.xlsx in provided raw dataset)
+        columns:
+          - name: id
+            description: device id, primary key
+            tests:
+              - unique
+              - not_null
+          - name: type
+            description: device type, limited values
+            tests:
+              - accepted_values:
+                  values: [1, 2, 3, 4, 5]
+                  quote: false
+          - name: store_id
+            description: id for store, foreign key
+            tests:
+              - not_null

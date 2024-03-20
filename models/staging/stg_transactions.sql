@@ -9,7 +9,7 @@ staged as (
 select 
     id,
     device_id,
-    product_name || product_name_4 as product_name,
+    product_name || ' ' ||product_name_4 as product_name,
     product_sku,
     amount,
     status,

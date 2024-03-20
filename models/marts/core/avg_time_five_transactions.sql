@@ -17,7 +17,7 @@ join_transactions as(
      where t.transaction_created_at >= t.store_created_at
 ),
 
-staged as(
+final as(
     select store_name,
             country,
             typology,
@@ -28,4 +28,4 @@ staged as(
     order by 1, 2, 3
 )
 
-select * from staged
+select * from final
