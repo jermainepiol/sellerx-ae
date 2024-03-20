@@ -35,6 +35,7 @@ Below are the general steps that I used in creating this project:
 6. Staging tables are located in ![models/staging](https://github.com/jermainepiol/sellerx-ae/tree/main/models/staging), while final models are in ![models/mart/core](https://github.com/jermainepiol/sellerx-ae/tree/main/models/mart/core)
 7. Dataset properties are located in ![src_datasets.yml](https://github.com/jermainepiol/sellerx-ae/blob/main/models/staging/src_datasets.yaml), including basic tests for values (especially primary IDs)
 8. A ![positive_transaction_value.sql](https://github.com/jermainepiol/sellerx-ae/blob/main/tests/positive_transaction_value.sql) was also created to check that all transactions do not have a zero or negative amount.
+9. Source freshness (dbt) is purposely not included, as it was not required.
 
 ## Answers
 Here are the main tables/queries that answer the questions asked:
