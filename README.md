@@ -49,6 +49,6 @@ Here are the main tables/queries that answer the questions asked:
 ### ERD
 ![Database ER diagram](https://github.com/jermainepiol/sellerx-ae/assets/44722197/485c52e9-45e8-45ff-95a8-a0169373ca16)
 
-### Final linear graph
-![image](https://github.com/jermainepiol/sellerx-ae/assets/44722197/3f769e85-ac4b-4b09-b9d7-72c591699f35)
+### Final lineage graph
+![image](https://github.com/jermainepiol/sellerx-ae/assets/44722197/f8731700-a4b9-4cb5-a833-7f21701a1ff0)
 
