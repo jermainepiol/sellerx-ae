@@ -13,6 +13,4 @@ valid_transactions as(
     order by 3 desc
 )
 
-select * 
-from valid_transactions
-limit 10
+select *  from valid_transactions limit 10
