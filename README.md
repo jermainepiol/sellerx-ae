@@ -40,10 +40,15 @@ Below are the general steps that I used in creating this project:
 ## Answers
 Here are the main tables/queries that answer the questions asked:
   * Top 10 stores per transacted amount - ![top_store.sql](https://github.com/jermainepiol/sellerx-ae/blob/main/models/marts/core/top_stores.sql)
+      - Filtering transactions to 'accepted' only status, then getting the total amount of transactions by store. Limits the results to the top 10 rows/data.
   * Top 10 products sold - ![top_products.sql](https://github.com/jermainepiol/sellerx-ae/blob/main/models/marts/core/top_products.sql)
+      - Again, getting only 'accepted' transactions, get the total amount of the transactions by product. Limits the results to top 10 rows/data. SKU and product_name are included because SKU values are not unique in this scenario.
   * Average transacted amount per store typology and country - ![amt_per_typology_country](https://github.com/jermainepiol/sellerx-ae/blob/main/models/marts/core/amt_per_typology_country.sql)
+      - Valid transactions with total amount, aggregated by typology and country. Results will display typology - country - total amount
   * Percentage of transactions per device type - ![transactions_per_device](https://github.com/jermainepiol/sellerx-ae/blob/main/models/marts/core/transactions_per_device.sql)
+      - Counts transactions in each device type vs total number of transactions in the dataset. Transasctions are not filtered because this question might be needed to see which devices are mostly used in stores.
   * Average time for a store to perform its 5 first transactions - ![avg_time_five_transactions](https://github.com/jermainepiol/sellerx-ae/blob/main/models/marts/core/avg_time_five_transactions.sql)
+      - As explained in the assumptions, I used the created_at from transactions and created_at from stores data to get the time (in days) in between. Then limiting the data for only the first 5 transactions (after store created_at), I got the average duration for the stores.
 
 ## Diagrams
 ### ERD
