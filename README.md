@@ -50,5 +50,5 @@ Here are the main tables/queries that answer the questions asked:
 ![Database ER diagram](https://github.com/jermainepiol/sellerx-ae/assets/44722197/485c52e9-45e8-45ff-95a8-a0169373ca16)
 
 ### Final lineage graph
-![image](https://github.com/jermainepiol/sellerx-ae/assets/44722197/f8731700-a4b9-4cb5-a833-7f21701a1ff0)
+![image](https://github.com/jermainepiol/sellerx-ae/assets/44722197/a9b6a717-e51b-4920-a2ed-17585a8ad947)
 
