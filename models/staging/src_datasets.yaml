@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: sellerx-test
+    database: sellerx-test
+    schema: test
+    tables:
+      - name: transaction
+        description: staging table for transaction data (transaction.xlsx in provided raw dataset)
+      - name: store
+        description: staging table for store data (store.xlsx in provided raw dataset)
+      - name: device
+        description: staging table for device data (device.xlsx in provided raw dataset)

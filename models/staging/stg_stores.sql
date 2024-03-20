@@ -10,6 +10,7 @@ select
     id,
     name,
     country,
+    created_at,
     typology
 from source
 
