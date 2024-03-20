@@ -1,10 +1,11 @@
 # sellerx-ae
 Public repo for SellerX AE take home test 
 ## Contents
-1. ![Setup](https://github.com/jermainepiol/sellerx-ae/main/README.md#setup)
-3. ![Assumptions/ Explanations](https://github.com/jermainepiol/sellerx-ae/main/README.md#assumptions-explanations)
-4. ![Answers](https://github.com/jermainepiol/sellerx-ae/main/README.md#answers)
-5. ![Diagrams](https://github.com/jermainepiol/sellerx-ae/main/README.md#diagrams)
+1. ![Setup](https://github.com/jermainepiol/sellerx-ae/blob/main/README.md#setup)
+3. ![Assumptions/ Explanations](https://github.com/jermainepiol/sellerx-ae/blob/main/README.md#assumptions-explanations)
+4. ![Answers](https://github.com/jermainepiol/sellerx-ae/blob/main/README.md#answers)
+5. ![Diagrams](https://github.com/jermainepiol/sellerx-ae/blob/main/README.md#diagrams
+)
 
 ## Setup
 ### Dataset
